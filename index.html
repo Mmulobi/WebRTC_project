@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebRTC sample</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="vidio-container">
+            <h1>WebRTC Video Call</h1>
+            <div class="videos">
+                <video id="localVideo" autoplay muted></video>
+                <video id="remoteVideo" autoplay></video>
+            </div>
+            <div class="controls">
+                <button id="muteButton">Mute</button>
+                <button id="videoButton">Video off</button>
+                <button id="endCallButton">End Call</button>
+            </div>
+            <div class="status">Connecting......</div>
+        </div>
+        <script src="main.js"></script>
+    </body>

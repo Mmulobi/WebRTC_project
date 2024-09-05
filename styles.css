@@ -1,0 +1,69 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: azure;
+    margin: 0;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+
+video {
+    width: 45%;
+    max-width: 600px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#muteButton, #videoButton {
+    background-color: black;
+    color: white;
+}
+
+
+#endCallButton {
+    background-color: darkred;
+    color: white;
+}
+
+
+.status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: chartreuse;
+}
+
+@media (max-width: 768px) {
+    .videos {
+        flex-direction: column;
+    }
+
+    video {
+        width: 90%;
+    }
+}
